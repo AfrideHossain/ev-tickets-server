@@ -27,6 +27,8 @@ app.get("/", (req, res) => {
 
 // users management route
 app.use("/", require("./routes/usersManagement"));
+// events management route
+app.use("/", require("./routes/eventsManagement"));
 
 app.listen(port, () => {
   console.log(`Ev-Tickets listening on port ${port}`);
